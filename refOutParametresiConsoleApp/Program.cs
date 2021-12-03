@@ -8,6 +8,7 @@ namespace refOutParametresiConsoleApp
 
         static void Main(string[] args)
         {
+            //Metinlerin En uzun olanını ve karakter sayısını bulma 
             string metMax;
             Console.WriteLine("Lütfen Bir Metin1 Giriniz:");
             string metin1 = Console.ReadLine();
@@ -15,14 +16,20 @@ namespace refOutParametresiConsoleApp
             string metin2 = Console.ReadLine();
             metinhesapla(metin1, metin2, out metMax,out s1);
             Console.WriteLine($"Metinlerin en büyüğü {metMax} {s1}");
+            //Metinlerin En uzun olanını ve karakter sayısını bulma Son
+
 
             //Sayıların En büyüğünü ve En küçüğünü Bulma
             //int a = 50, b = 40, max,min;
             //buyukgetir(a,b, out max);
             //kucukgetir(a, b, out min);
             //Console.WriteLine($"Sayıların en büyüğü {max},Sayıların en küçüğü {min}");
-        }
+            //Sayıların En büyüğünü ve En küçüğünü Bulma Son
+            
 
+
+        }
+        //Metinlerin En uzun olanını ve karakter sayısını bulma Başlangıç
         private static void metinhesapla(string metin1, string metin2, out string metMax, out int s1)
         {
             
@@ -37,7 +44,10 @@ namespace refOutParametresiConsoleApp
                 s1 = metin2.Length;
             }
             }
-        //Sayıların En büyüğünü ve En küçüğünü Bulma
+        //Metinlerin En uzun olanını ve karakter sayısını bulma Son
+
+
+        //Sayıların En büyüğünü ve En küçüğünü Bulma Başlangıç
         //private static void kucukgetir(int a, int b, out int min)
         //{
         //    if (a < b)
@@ -49,7 +59,6 @@ namespace refOutParametresiConsoleApp
         //        min = b;
         //    }
         //}
-        //Sayıların En büyüğünü ve En küçüğünü Bulma
         //private static void buyukgetir(int a, int b, out int max)
         //{
         //    if (a>b)
@@ -61,5 +70,7 @@ namespace refOutParametresiConsoleApp
         //        max = b;
         //    }
         //}
+        //Sayıların En büyüğünü ve En küçüğünü Bulma Son
+
     }
 }
